@@ -82,22 +82,14 @@ const Main: React.FC = ({}) => {
       follows: 1564268,
       imageUrl: "https://i.imgur.com/RSjIFyM.jpeg",
     },
-    {
-      id: 13,
-      name: "Gil",
-      follows: 1564268,
-      imageUrl: "https://i.imgur.com/RSjIFyM.jpeg",
-    },
-    {
-      id: 14,
-      name: "Gil",
-      follows: 1564268,
-      imageUrl: "https://i.imgur.com/RSjIFyM.jpeg",
-    },
   ]);
   return (
     <MainContainer>
-      <MainWraper></MainWraper>
+      <MainWraper>
+        {profiles.map((profile) => (
+          <Card />
+        ))}
+      </MainWraper>
     </MainContainer>
   );
 };

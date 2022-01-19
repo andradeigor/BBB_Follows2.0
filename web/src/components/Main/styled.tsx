@@ -13,4 +13,8 @@ export const MainWraper = styled.div`
   width: 90%;
   height: 100%;
   background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
 `;
